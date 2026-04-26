@@ -112,6 +112,7 @@ export default function Column({ column, cards, addCard, deleteCard, renameColum
                   card={card}
                   index={index}
                   onClick={() => setActiveCardId(card.id)}
+                  onDelete={() => handleDeleteCard(card.id)}
                 />
               ))}
               {provided.placeholder}
